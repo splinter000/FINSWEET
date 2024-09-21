@@ -830,6 +830,117 @@ table {
   display: none;
 }
 
+footer {
+  background-color: #1c1e53;
+  padding-top: 100px;
+  font-family: "Poppins";
+}
+footer .container-social {
+  display: grid;
+  grid-template-columns: 517px 1fr;
+  grid-template-rows: 206px 95px;
+  -moz-column-gap: 142px;
+       column-gap: 142px;
+}
+footer .container-social .info img {
+  width: 156px;
+  height: 38px;
+  max-width: 100%;
+  margin-bottom: 22px;
+}
+footer .container-social .info p {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: rgba(255, 255, 255, 0.8);
+  padding-right: 118px;
+}
+footer .container-social .social {
+  padding-right: 350px;
+}
+footer .container-social .social h3 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 133%;
+  color: #fff;
+}
+footer .container-social .social p {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: rgba(255, 255, 255, 0.8);
+}
+footer .container-social .social .social-img {
+  margin-top: 28px;
+}
+footer .container-social .social .social-img img {
+  margin-right: 27px;
+}
+footer .container-social .contact {
+  background-color: #fcd980;
+  padding-top: 18px;
+  padding-left: 37px;
+  display: flex;
+}
+footer .container-social .contact .contact-email {
+  margin-right: 29px;
+}
+footer .container-social .contact .contact-email h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: #282938;
+}
+footer .container-social .contact .contact-email a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: rgba(40, 41, 56, 0.8);
+  text-decoration: none;
+}
+footer .container-social .contact .contact-call h4 {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 178%;
+  color: #282938;
+}
+footer .container-social .contact .contact-call a {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 175%;
+  color: rgba(40, 41, 56, 0.8);
+  text-decoration: none;
+}
+footer .copyright-menu {
+  background-color: #fff;
+}
+footer .copyright-menu .center {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 92px;
+  align-items: center;
+}
+footer .copyright-menu .center h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #282938;
+}
+footer .copyright-menu .center .menu {
+  justify-self: flex-end;
+}
+footer .copyright-menu .center .menu ul {
+  display: flex;
+}
+footer .copyright-menu .center .menu ul li a {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 175%;
+  color: #282938;
+  text-decoration: none;
+  margin-left: 32px;
+}
+
 @media screen and (max-width: 1300px) {
   .center {
     width: 95%;

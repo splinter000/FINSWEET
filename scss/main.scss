@@ -821,6 +821,144 @@ table {
     }
 }
 
+footer{
+    background-color: #1c1e53;
+    padding-top: 100px;
+    font-family: "Poppins";
+
+    .container-social{
+        display: grid;
+        grid-template-columns: 517px 1fr;
+        grid-template-rows: 206px 95px;
+        column-gap: 142px;
+
+        .info{
+
+            img{
+                width: 156px;
+                height: 38px;
+                max-width: 100%;
+                margin-bottom: 22px;
+            }
+
+            p{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 175%;
+                color: rgba(255, 255, 255, 0.8);
+                padding-right: 118px;
+            }
+        }
+
+        .social{
+            padding-right: 350px;
+            h3{
+                font-weight: 600;
+                font-size: 48px;
+                line-height: 133%;
+                color: #fff;
+            }
+
+            p{
+                font-weight: 400;
+                font-size: 16px;
+                line-height: 175%;
+                color: rgba(255, 255, 255, 0.8);
+            }
+
+            .social-img{
+                margin-top: 28px;
+
+                img{
+                    margin-right: 27px;
+                }
+            }
+        }
+
+        .contact{
+            background-color: #fcd980;
+            padding-top: 18px;
+            padding-left: 37px;
+            display: flex;
+
+            .contact-email{
+                margin-right: 29px;
+
+                h4{
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 178%;
+                    color: #282938;
+                }
+
+                a{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    color: rgba(40, 41, 56, 0.8);
+                    text-decoration: none;
+                }
+            }
+
+            .contact-call{
+                h4{
+                    font-weight: 500;
+                    font-size: 18px;
+                    line-height: 178%;
+                    color: #282938;
+                }
+
+                a{
+                    font-weight: 400;
+                    font-size: 16px;
+                    line-height: 175%;
+                    color: rgba(40, 41, 56, 0.8);
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+
+    .copyright-menu{
+        background-color: #fff;
+
+        .center{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 92px;
+            align-items: center;
+
+            h3{
+                font-weight: 500;
+                font-size: 16px;
+                line-height: 175%;
+                color: #282938;
+            }
+
+            .menu{
+                justify-self: flex-end;
+
+                ul{
+                    display: flex;
+
+
+                    li{
+                        a{
+                            font-weight: 500;
+                            font-size: 16px;
+                            line-height: 175%;
+                            color: #282938;
+                            text-decoration: none;
+                            margin-left: 32px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+        
+
 
 
 @media screen and (max-width: 1300px) {
