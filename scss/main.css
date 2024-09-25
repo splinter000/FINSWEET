@@ -774,6 +774,17 @@ table {
   -moz-column-gap: 109px;
        column-gap: 109px;
 }
+@media only screen and (max-width: 1300px) {
+  .container-questions {
+    grid-template-columns: 1fr;
+    row-gap: 64px;
+  }
+}
+@media only screen and (max-width: 600px) {
+  .container-questions {
+    padding: 80px 0;
+  }
+}
 .container-questions .left-side h3 {
   font-weight: 600;
   font-size: 38px;
@@ -794,6 +805,13 @@ table {
   margin-bottom: 32px;
   padding-bottom: 16px;
 }
+@media only screen and (max-width: 768px) {
+  .container-questions .right-side .questions-item {
+    grid-template-columns: 10% 65% 10%;
+    -moz-column-gap: 5%;
+         column-gap: 5%;
+  }
+}
 .container-questions .right-side .questions-item:last-child {
   border-bottom: none;
 }
@@ -812,12 +830,22 @@ table {
   line-height: 150%;
   color: #2405f2;
 }
+@media only screen and (max-width: 500px) {
+  .container-questions .right-side .questions-item .counter {
+    margin-left: 0px;
+  }
+}
 .container-questions .right-side .questions-item .question-info h5 {
   font-weight: 500;
   font-size: 24px;
   line-height: 150%;
   color: #282938;
   margin-bottom: 16px;
+}
+@media only screen and (max-width: 600px) {
+  .container-questions .right-side .questions-item .question-info h5 {
+    font-size: 20px;
+  }
 }
 .container-questions .right-side .questions-item .question-info p {
   font-weight: 500;
@@ -835,12 +863,31 @@ footer {
   padding-top: 100px;
   font-family: "Poppins";
 }
+@media only screen and (max-width: 600px) {
+  footer {
+    padding-top: 60px;
+  }
+}
 footer .container-social {
   display: grid;
   grid-template-columns: 517px 1fr;
   grid-template-rows: 206px 95px;
   -moz-column-gap: 142px;
        column-gap: 142px;
+}
+@media only screen and (max-width: 1024px) {
+  footer .container-social {
+    grid-template-columns: 450px 1fr;
+    -moz-column-gap: 42px;
+         column-gap: 42px;
+  }
+}
+@media only screen and (max-width: 768px) {
+  footer .container-social {
+    grid-template-columns: 1fr;
+    grid-template-rows: 130px;
+    row-gap: 40px;
+  }
 }
 footer .container-social .info img {
   width: 156px;
@@ -855,8 +902,18 @@ footer .container-social .info p {
   color: rgba(255, 255, 255, 0.8);
   padding-right: 118px;
 }
+@media only screen and (max-width: 420px) {
+  footer .container-social .info p {
+    padding-right: 0px;
+  }
+}
 footer .container-social .social {
   padding-right: 350px;
+}
+@media only screen and (max-width: 1300px) {
+  footer .container-social .social {
+    padding-right: 0px;
+  }
 }
 footer .container-social .social h3 {
   font-weight: 600;
@@ -881,6 +938,11 @@ footer .container-social .contact {
   padding-top: 18px;
   padding-left: 37px;
   display: flex;
+}
+@media only screen and (max-width: 420px) {
+  footer .container-social .contact {
+    display: block;
+  }
 }
 footer .container-social .contact .contact-email {
   margin-right: 29px;
@@ -931,6 +993,11 @@ footer .copyright-menu .center .menu {
 }
 footer .copyright-menu .center .menu ul {
   display: flex;
+}
+@media only screen and (max-width: 1100px) {
+  footer .copyright-menu .center .menu ul {
+    display: none;
+  }
 }
 footer .copyright-menu .center .menu ul li a {
   font-weight: 500;

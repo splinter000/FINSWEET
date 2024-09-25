@@ -749,6 +749,14 @@ table {
     grid-template-columns: 328px 846px;
     column-gap: 109px;
 
+    @include onlylarge(1300px){
+        grid-template-columns: 1fr;
+        row-gap: 64px;
+    }
+    @include onlylarge(600px){
+        padding: 80px 0;
+    }
+
     .left-side {
         h3 {
             font-weight: 600;
@@ -774,6 +782,11 @@ table {
             margin-bottom: 32px;
             padding-bottom: 16px;
 
+            @include onlylarge(768px){
+                grid-template-columns: 10% 65% 10%;
+                column-gap: 5%;
+            }
+
             &:last-child {
                 border-bottom: none;
             }
@@ -793,6 +806,9 @@ table {
                 font-size: 24px;
                 line-height: 150%;
                 color: #2405f2;
+                @include onlylarge(500px){
+                    margin-left: 0px;
+                }
             }
 
             .question-info {
@@ -802,6 +818,9 @@ table {
                     line-height: 150%;
                     color: #282938;
                     margin-bottom: 16px;
+                    @include onlylarge(600px){
+                        font-size: 20px;
+                    }
                 }
 
                 p {
@@ -825,12 +844,25 @@ footer{
     background-color: #1c1e53;
     padding-top: 100px;
     font-family: "Poppins";
+    @include onlylarge (600px){
+        padding-top: 60px;
+    }
 
     .container-social{
         display: grid;
         grid-template-columns: 517px 1fr;
         grid-template-rows: 206px 95px;
         column-gap: 142px;
+
+        @include onlylarge (1024px){
+            grid-template-columns: 450px 1fr;
+            column-gap: 42px;
+        }
+        @include onlylarge (768px){
+            grid-template-columns: 1fr;
+            grid-template-rows: 130px;
+            row-gap: 40px;
+        }
 
         .info{
 
@@ -847,11 +879,20 @@ footer{
                 line-height: 175%;
                 color: rgba(255, 255, 255, 0.8);
                 padding-right: 118px;
+
+                @include onlylarge (420px){
+                    padding-right: 0px;
+                }
             }
         }
 
         .social{
             padding-right: 350px;
+
+            @include onlylarge (1300px){
+                padding-right: 0px;
+            }
+
             h3{
                 font-weight: 600;
                 font-size: 48px;
@@ -880,6 +921,9 @@ footer{
             padding-top: 18px;
             padding-left: 37px;
             display: flex;
+            @include onlylarge (420px){
+                display: block;
+            }
 
             .contact-email{
                 margin-right: 29px;
@@ -940,7 +984,10 @@ footer{
 
                 ul{
                     display: flex;
-
+                    
+                    @include onlylarge(1100px){
+                        display: none;
+                    }
 
                     li{
                         a{
